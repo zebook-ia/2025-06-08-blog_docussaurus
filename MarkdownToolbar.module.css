@@ -1,0 +1,75 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  gap: 0.5rem;
+}
+
+.toolGroup {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.toolButton {
+  padding: 0.5rem 0.75rem;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-800);
+  transition: all 0.2s;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolButton:hover {
+  background: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.toolButton:active {
+  background: var(--ifm-color-emphasis-200);
+  transform: translateY(1px);
+}
+
+/* Estilos específicos para alguns botões */
+.toolButton:nth-child(1) { /* Bold */
+  font-weight: 900;
+}
+
+.toolButton:nth-child(2) { /* Italic */
+  font-style: italic;
+}
+
+.toolButton:nth-child(3) { /* Heading */
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .toolbar {
+    flex-wrap: wrap;
+    padding: 0.5rem;
+  }
+  
+  .toolGroup {
+    flex-wrap: wrap;
+  }
+  
+  .toolButton {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+    min-width: 28px;
+  }
+}
+
