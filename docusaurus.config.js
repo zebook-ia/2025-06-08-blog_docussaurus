@@ -46,13 +46,8 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/gabriel-ramos/blog-pessoal/tree/main/',
-        },
+        // Disable the docs plugin as this project only uses the blog feature
+        docs: false,
         blog: {
           showReadingTime: true,
           feedOptions: {
