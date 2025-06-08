@@ -3,6 +3,11 @@ import Layout from '@theme/Layout';
 import AdminLogin from '../../components/admin/AdminLogin';
 import AdminDashboard from '../../components/admin/AdminDashboard';
 
+/**
+ * Renders the admin page, managing authentication state and displaying either the admin dashboard or login form.
+ *
+ * Synchronizes authentication status with local storage to persist admin login across sessions.
+ */
 export default function AdminPage() {
   const [authenticated, setAuthenticated] = useState(false);
 
